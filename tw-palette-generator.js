@@ -89,7 +89,7 @@ class Generator {
 
     colorScale.shades.forEach(({ number, hexcode, hsl, oklch }) => {
       const colorBox = document.createElement("div");
-      colorBox.classList.add("color-box");
+      colorBox.classList.add("color-box", "flex-item");
       colorBox.innerText = number + " : " + hexcode.toUpperCase();
       colorBox.style.backgroundColor = hexcode.toUpperCase();
       outputEl.append(colorBox);
