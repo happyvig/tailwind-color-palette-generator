@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <script src="./chroma.js"></script>
+    <script src="./tw-color-palette.js"></script>
+    <script src="./tw-palette-generator.js"></script>
+    <title>Tailwind Color Palette Generator using Chroma-js</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Tailwind Color Palette Generator using Chroma-js</h1>
+    <script>
+      const h1 = document.querySelector("h1");
+
+      h1.style.color = chroma("#12344d").darken().hex();
+      h1.style.fontSize = "2rem";
+      // console.log(window.TwColorPalette);
+    </script>
+    <label id="color-picker-label" for="color-picker">Select color :</label>
+    <input id="color-picker" type="color" value="#635AFF" />
+    <div id="result-palette"></div>
+  </body>
+</html>
