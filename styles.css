@@ -7,9 +7,21 @@
   }
 }
 
+html, body{
+  height: 100%;
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 24px;
-  background-color: azure;
+  background: whitesmoke;
+}
+
+#color-picker-label {
+  font-size: large;
 }
 
 #result-palette {
