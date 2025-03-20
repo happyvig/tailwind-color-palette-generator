@@ -18,6 +18,21 @@ body {
   background: whitesmoke;
 }
 
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1.5em 0;
+  padding: 0;
+}
+
+#color-picker {
+  border: 2px dashed #596070;
+  height: 48px;
+  width: 48px;
+}
+
 #color-picker-label {
   font-size: larger;
 }
