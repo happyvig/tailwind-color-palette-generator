@@ -90,8 +90,10 @@ class Generator {
     colorScale.shades.forEach(({ number, hexcode, hsl, oklch }) => {
       const colorBox = document.createElement("div");
       colorBox.classList.add("color-box", "flex-item");
-      colorBox.innerText = number + " : " + hexcode.toUpperCase();
-      colorBox.style.backgroundColor = hexcode.toUpperCase();
+      colorBox.innerText = number + " : " + hexcode.toUpperCase(); // Tile text
+      colorBox.style.color =
+        chroma.contrast(hexcode, "#fff") > 4.5 ? "white" : "black"; // Text color
+      colorBox.style.backgroundColor = hexcode.toUpperCase(); // Tile bg color
       outputEl.append(colorBox);
     });
   }
