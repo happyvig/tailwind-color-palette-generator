@@ -9,7 +9,7 @@ const init = () => {
     setColorToLabel(event?.target?.value);
     generator.onInputHexcode(colorPickerEl.value);
   };
-  const onPickerClosed = () => { window.confetti({origin: { x: 0.5, y: 0.2}}); };
+  const onPickerClosed = () => { window.confetti({origin: { x: 0.5, y: 0.9}}); };
 
   colorPickerEl.addEventListener("input", watchColorPicker, false);
   colorPickerEl.addEventListener("change", onPickerClosed, false);
