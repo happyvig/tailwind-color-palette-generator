@@ -12,8 +12,8 @@ const init = () => {
   const onPickerClosed = () => { window.confetti(); };
 
   colorPickerEl.addEventListener("input", watchColorPicker, false);
-  colorPickerEl.addEventListener("change", watchColorPicker, false);
-  colorPickerEl.addEventListener("blur", onPickerClosed, false);
+  colorPickerEl.addEventListener("change", onPickerClosed, false);
+ // colorPickerEl.addEventListener("blur", onPickerClosed, false);
 
   setColorToLabel(colorPickerEl.value);
   generator.onInputHexcode(colorPickerEl.value);
