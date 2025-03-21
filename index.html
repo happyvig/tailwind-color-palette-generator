@@ -19,6 +19,12 @@
   </head>
   <body>
     <h1>Tailwind Color Palette Generator using Chroma-js</h1>
+   
+    <label id="color-picker-label" for="color-picker">Pick a color to generate the palette :</label>
+    <input id="color-picker" type="color" />
+    <hr />
+    <div id="result-palette" class="flex-container wrap"></div>
+
     <script>
       const h1 = document.querySelector("h1");
 
@@ -30,9 +36,5 @@
       const picker = document.getElementById('color-picker');
       picker.value = chroma.random();
     </script>
-    <label id="color-picker-label" for="color-picker">Pick a color to generate the palette :</label>
-    <input id="color-picker" type="color" />
-    <hr />
-    <div id="result-palette" class="flex-container wrap"></div>
   </body>
 </html>
