@@ -25,6 +25,10 @@
       h1.style.color = chroma("#12344d").darken().hex();
       h1.style.fontSize = "2rem";
       // console.log(window.TwColorPalette);
+
+      // Randomise default color on load
+      const picker = document.getElementById('color-picker');
+      picker.value = chroma.random();
     </script>
     <label id="color-picker-label" for="color-picker">Pick a color to generate the palette :</label>
     <input id="color-picker" type="color" value="#635AFF" />
