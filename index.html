@@ -11,6 +11,11 @@
     <script src="./tw-palette-generator.js"></script>
     <title>Tailwind Color Palette Generator using Chroma-js</title>
     <link rel="stylesheet" href="styles.css" />
+    <script type="module">
+      import confetti from "https://esm.sh/canvas-confetti@1.6.0";
+      confetti(); // Show on load
+      window.confetti = confetti; // Persist for future action
+    </script>
   </head>
   <body>
     <h1>Tailwind Color Palette Generator using Chroma-js</h1>
