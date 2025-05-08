@@ -1,2 +1,3 @@
 # tailwind-color-palette-generator
-Created with CodeSandbox
+
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/happyvig/tailwind-color-palette-generator)
